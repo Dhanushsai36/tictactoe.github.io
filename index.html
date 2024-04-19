@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="head1"><h1>Tic Tac Toe</h1></div>
+  <div id="game-container">
+    <div id="game">
+      <div class="row">
+        <div class="cell" onclick="makeMove(0)"></div>
+        <div class="cell" onclick="makeMove(1)"></div>
+        <div class="cell" onclick="makeMove(2)"></div>
+      </div>
+      <div class="row">
+        <div class="cell" onclick="makeMove(3)"></div>
+        <div class="cell" onclick="makeMove(4)"></div>
+        <div class="cell" onclick="makeMove(5)"></div>
+      </div>
+      <div class="row">
+        <div class="cell" onclick="makeMove(6)"></div>
+        <div class="cell" onclick="makeMove(7)"></div>
+        <div class="cell" onclick="makeMove(8)"></div>
+      </div>
+    </div>
+    <div id="buttons-container">
+      <button onclick="switchToSinglePlayer()">Play with AI</button>
+      <button onclick="switchToTwoPlayer()">Two Player</button>
+      <button onclick="resetGame()">Reset</button>
+      <button onclick="undoMove()">Undo</button>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

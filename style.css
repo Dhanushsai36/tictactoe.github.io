@@ -1,0 +1,81 @@
+body {
+    background-image: url(background.jpg);
+    margin: 0; /* Remove default body margin */
+    display: flex; /* Make body a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set body height to 100% viewport height */
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align buttons to right */
+  }
+  
+  #head1 {
+    text-align: center; /* Already set for centering text */
+    color: rgb(220, 255, 47);
+    font-size: 2em;
+    /* Added styles for positioning */
+    position: absolute; /* Make heading absolute for top positioning */
+    top: 0; /* Position at top of viewport */
+    left: 50%; /* Position horizontally at center */
+    transform: translateX(-50%); /* Offset to center relative to itself */
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Reduced cell width */
+    grid-gap: 10px;
+    background-color: transparent;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .cell:hover {
+    background-color: #f2f2f2;
+  }
+  
+  #result {
+    margin-top: 20px;
+    color: white;
+  }
+  
+  #buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black; /* Optional border for definition */
+    background-color: #f2f2f2; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s ease-in-out; /* Smooth color change on hover */
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  } 
